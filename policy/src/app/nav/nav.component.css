@@ -1,0 +1,23 @@
+.navbar{
+    background-color: purple !important;
+    /* color: white !important; */
+
+}
+.lielem a{
+    color: white !important;
+    margin: 2px;
+}
+.lielem :hover{
+    color: white;
+background-color: black;
+z-index: 1;
+border: 1px solid black;
+}
+.carousel-indicators li{
+    background-color: black;
+}
+
+
+.imgcls{
+    height: 555px;
+}
