@@ -1,5 +1,6 @@
 .foot{
-    background-color: #03dac5;
+    background-color: darkblue;
+    color:white;
     
 }
 ul{
@@ -22,6 +23,6 @@ a{
     text-decoration: none;
 }
 .c0pyright{
-    background-color: #908080;
+    background-color: #808080;
     color: white;
 }

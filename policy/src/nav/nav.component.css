@@ -1,5 +1,5 @@
 .navbar{
-    background-color: purple !important;
+    background-color: #408080 !important;
     /* color: white !important; */
 
 }
@@ -9,15 +9,8 @@
 }
 .lielem :hover{
     color: white;
-background-color: black;
+background-color: #804048;
 z-index: 1;
 border: 1px solid black;
 }
-.carousel-indicators li{
-    background-color: black;
-}
 
-
-.imgcls{
-    height: 555px;
-}

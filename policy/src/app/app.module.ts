@@ -16,6 +16,10 @@ import { FrontpageComponent } from '../frontpage/frontpage.component';
 import { TermpolicyComponent } from '../termpolicy/termpolicy.component';
 import { HealthplanComponent } from '../healthplan/healthplan.component';
 import { CarinsuranceComponent } from '../carinsurance/carinsurance.component';
+import { LifepageComponent } from '../lifepage/lifepage.component';
+import { HealthpageComponent } from '../healthpage/healthpage.component';
+import { MotorpageComponent } from '../motorpage/motorpage.component';
+import { CarousalComponent } from '../carousal/carousal.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +35,11 @@ import { CarinsuranceComponent } from '../carinsurance/carinsurance.component';
     FrontpageComponent,
     TermpolicyComponent,
     HealthplanComponent,
-    CarinsuranceComponent
+    CarinsuranceComponent,
+    LifepageComponent,
+    HealthpageComponent,
+    MotorpageComponent,
+    CarousalComponent
   ],
   imports: [
     BrowserModule,
