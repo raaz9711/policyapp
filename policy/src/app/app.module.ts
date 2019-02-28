@@ -3,15 +3,19 @@ import { NgModule, Component } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavComponent } from './nav/nav.component';
-import { LifeinsuranceComponent } from './lifeinsurance/lifeinsurance.component';
-import { HealthInsuranceComponent } from './health-insurance/health-insurance.component';
-import { MotorComponent } from './motor/motor.component';
-import { AboutComponent } from './about/about.component';
-import { FooterComponent } from './footer/footer.component';
-import { LoginComponent } from './login/login.component';
-import { SignupComponent } from './signup/signup.component';
+import { NavComponent } from '../nav/nav.component';
+import { LifeinsuranceComponent } from '../lifeinsurance/lifeinsurance.component';
+import { HealthInsuranceComponent } from '../health-insurance/health-insurance.component';
+import { MotorComponent } from '../motor/motor.component';
+import { AboutComponent } from '../about/about.component';
+import { FooterComponent } from '../footer/footer.component';
+import { LoginComponent } from '../login/login.component';
+import { SignupComponent } from '../signup/signup.component';
 import { RouterModule } from '@angular/router';
+import { FrontpageComponent } from '../frontpage/frontpage.component';
+import { TermpolicyComponent } from '../termpolicy/termpolicy.component';
+import { HealthplanComponent } from '../healthplan/healthplan.component';
+import { CarinsuranceComponent } from '../carinsurance/carinsurance.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,11 @@ import { RouterModule } from '@angular/router';
     AboutComponent,
     FooterComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    FrontpageComponent,
+    TermpolicyComponent,
+    HealthplanComponent,
+    CarinsuranceComponent
   ],
   imports: [
     BrowserModule,
