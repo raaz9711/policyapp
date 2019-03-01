@@ -1,0 +1,11 @@
+.psect{
+    z-index: 1;
+
+}
+.psect:hover{
+box-shadow: 5px 10px 8px 10px #608081;
+}
+.lifeinsurance{
+    background-color: #408080;
+    color: #fff;
+}

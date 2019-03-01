@@ -1,0 +1,16 @@
+.navbar{
+    background-color: #408080 !important;
+    /* color: white !important; */
+
+}
+.lielem a{
+    color: white !important;
+    margin: 2px;
+}
+.lielem :hover{
+    color: white;
+background-color: #804048;
+z-index: 1;
+border: 1px solid black;
+}
+
