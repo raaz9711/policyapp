@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Component } from '@angular/core';
-
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule }   from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from '../nav/nav.component';
@@ -20,6 +21,8 @@ import { LifepageComponent } from '../lifepage/lifepage.component';
 import { HealthpageComponent } from '../healthpage/healthpage.component';
 import { MotorpageComponent } from '../motorpage/motorpage.component';
 import { CarousalComponent } from '../carousal/carousal.component';
+// import { HttpClient } from 'selenium-webdriver/http';
+
 
 @NgModule({
   declarations: [
@@ -43,11 +46,13 @@ import { CarousalComponent } from '../carousal/carousal.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     RouterModule.forRoot([
      { path : 'signup' , component : SignupComponent},
       {path: 'login' , component : LoginComponent}
     ]),
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

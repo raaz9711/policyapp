@@ -26,3 +26,18 @@ a{
     background-color: #808080;
     color: white;
 }
+.fab,.fas{
+    padding:4px 8px;
+    }
+
+.contact-logo{
+
+    font-size:72px;
+    }
+
+
+@media only screen and (max-width: 600px) {
+    .contact-logo{
+   
+   font-size:32px;
+   }}

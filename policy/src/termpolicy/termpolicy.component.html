@@ -1,3 +1,22 @@
 <p>
   termpolicy works!
 </p>
+
+
+<table>
+  <tr>
+    <td>id</td>
+    <td>policy number</td>
+    <td>policy name</td>
+    <td>Amount</td>
+    <td>Buy</td>
+  </tr>
+  <tr *ngFor="let policy of policies">
+    <td>{{ policy.id }}</td>
+    <td>{{ policy.number }}</td>
+    <td>{{ policy.name }}</td>
+
+    <td>{{ policy.amount }}</td>
+    <td><button class="btn btn-primary">Buy</button></td>
+    <td>
+</table>
