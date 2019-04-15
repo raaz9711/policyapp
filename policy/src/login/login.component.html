@@ -1,4 +1,6 @@
-<div>
+ <app-nav></app-nav>
+ <br>
+ <div>
 <div class="container lform">
     <form>
         <div class="form-group">
@@ -14,10 +16,20 @@
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">Check me out</label>
         </div>
-        <button type="submit" class="btn btn-primary" >Login</button>
-        <button type="submit" class="btn btn-primary ml-5" >
-          <a routerLink="/signup" style="text-decoration: none; color: white;"> Sign in </a>
-         </button>
+        <div class="row">
+          <div class="col-12 col-sm-6">
+            <button type="submit" class="btn btn-primary" >Login</button>
+          </div>
+          <div class="col-12 col-sm-6">
+
+            <button type="submit" class="btn btn-primary"routerLink='/signup' >
+                <!-- [routerLink]="['artist', item.artistId]" -->
+              <!-- <a  style="text-decoration: none; color: white;">  </a> -->
+              Sign in
+             </button>
+          </div>
+        </div>
+      
         <!-- <a routerLink="/heroes" routerLinkActive="active">Heroes</a> -->
       </form>
     

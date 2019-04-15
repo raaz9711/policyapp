@@ -6,10 +6,13 @@ import { FrontpageComponent } from '../frontpage/frontpage.component';
 import {NavComponent} from '../nav/nav.component';
 import { TermpolicyComponent } from 'src/termpolicy/termpolicy.component';
 import { HealthplanComponent } from 'src/healthplan/healthplan.component';
-import { CarinsuranceComponent } from 'src/carinsurance/carinsurance.component';
+import { CarinsuranceComponent } from './carinsurance/carinsurance.component';
 import { MotorpageComponent } from 'src/motorpage/motorpage.component';
 import { LifepageComponent } from 'src/lifepage/lifepage.component';
 import { HealthpageComponent } from 'src/healthpage/healthpage.component';
+import { AboutComponent } from 'src/about/about.component';
+import{PaymentComponent} from './payment/payment.component'
+import { NotfoundComponent } from './notfound/notfound.component';
 const routes: Routes = [
   // {path: '' , redirectTo  : 'SignupComponent', pathMatch : 'full' },
 {path: 'signup' , component: SignupComponent},
@@ -21,11 +24,29 @@ const routes: Routes = [
 {path : 'carinsurance', component: CarinsuranceComponent},
 {path : 'motorpage', component: MotorpageComponent},
 {path : 'lifeinsurance' , component: LifepageComponent},
-{path : 'healthinsurance', component: HealthpageComponent}
+{path : 'healthinsurance', component: HealthpageComponent},
+{path : 'about', component: AboutComponent},
+{path:'payment', component: PaymentComponent},
+
+{path:'**',component:NotfoundComponent},
+{
+  path:'login',component: LoginComponent,
+
+  children:[
+    {
+      path:'signup',component:SignupComponent
+    }
+  ]
+}
+
+
+
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  //import { PaymentComponent } from './payment/payment.component';
+exports: [RouterModule]
 })
+
 export class AppRoutingModule { }

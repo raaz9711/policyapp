@@ -1,0 +1,37 @@
+<app-nav></app-nav>
+
+<div class="row bg-secondary fonts">
+  <div class="col-1 col-sm-1 text-bold text-center">
+S.no
+  </div>
+  <div class="col-3 col-sm-3  text-bold text-center">
+      Name
+        </div>
+        <div class="col-6 col-sm-6 text-bold text-center">
+            Detail
+              </div>
+              
+        <div class="col-2 col-sm-2 text-bold text-center">
+            Buy
+              </div>
+</div>
+<br>
+<div class="row" *ngFor ="let n of alldata">
+    <div class="col-1 col-sm-1 text-center">
+        {{n.id}}
+    </div>
+    <div class="col-2 col-sm-3 text-center ">
+        {{n.name}}
+          </div>
+          <div class="col-4 col-sm-6">
+              {{n.description }}
+                </div>
+                
+          <div class="col-2 col-sm-2 text-center">
+              
+              <button class="btn btn-danger" routerLink='/payment'>  
+                  buy 
+                {{n.price}}
+              </button>
+                </div>
+  </div>

@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Component } from '@angular/core';
+import {HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,11 +16,14 @@ import { RouterModule } from '@angular/router';
 import { FrontpageComponent } from '../frontpage/frontpage.component';
 import { TermpolicyComponent } from '../termpolicy/termpolicy.component';
 import { HealthplanComponent } from '../healthplan/healthplan.component';
-import { CarinsuranceComponent } from '../carinsurance/carinsurance.component';
+import { CarinsuranceComponent } from './carinsurance/carinsurance.component';
 import { LifepageComponent } from '../lifepage/lifepage.component';
 import { HealthpageComponent } from '../healthpage/healthpage.component';
 import { MotorpageComponent } from '../motorpage/motorpage.component';
 import { CarousalComponent } from '../carousal/carousal.component';
+import {DataService} from './data.service';
+import { PaymentComponent } from './payment/payment.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 @NgModule({
   declarations: [
@@ -39,17 +43,20 @@ import { CarousalComponent } from '../carousal/carousal.component';
     LifepageComponent,
     HealthpageComponent,
     MotorpageComponent,
-    CarousalComponent
+    CarousalComponent,
+    PaymentComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot([
-     { path : 'signup' , component : SignupComponent},
-      {path: 'login' , component : LoginComponent}
-    ]),
+    HttpClientModule,
+    // RouterModule.forRoot([
+    //  { path : 'signup' , component : SignupComponent},
+    //   {path: 'login' , component : LoginComponent}
+    // ]),
     AppRoutingModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
