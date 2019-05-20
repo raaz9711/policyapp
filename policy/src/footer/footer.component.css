@@ -1,8 +1,9 @@
 .foot{
-    background-color: darkblue;
+    background-color: grey;
     color:white;
     
 }
+
 ul{
 list-style-type: none;
 width:auto;
@@ -12,14 +13,14 @@ padding: 8px;
 ul li{
     
     padding: 8px 12px;
-    background-color: #05fac5;
+    /* background-color: #05fac5; */
     z-index: 1;
-    box-shadow: 2px 6px 8px #01fac5;
+    /* box-shadow: 2px 6px 8px #01fac5; */
 }
 ul li:hover{
     background-color:#03dac5; 
 }
-a{
+li a{
     text-decoration: none;
 }
 .c0pyright{
@@ -38,6 +39,5 @@ a{
 
 @media only screen and (max-width: 600px) {
     .contact-logo{
-   
    font-size:32px;
    }}

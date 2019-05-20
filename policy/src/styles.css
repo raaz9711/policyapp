@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+.logox{
+    height: 50px;
+    width: 50px;
+}
+
+.psect{
+    z-index: 1;
+
+}
+.psect:hover{
+box-shadow: 5px 10px 8px 10px #608081;
+}

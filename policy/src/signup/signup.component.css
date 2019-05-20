@@ -1,0 +1,21 @@
+.cnt1{
+    /* margin-left: 33%; */
+    padding-top: 33px;
+    padding-left: 33%;
+    padding-right: 33%;
+    background-image: url("../assets/signbg2.jpg");
+    background-repeat: no-repeat;
+    height: 1000px;
+
+}
+.signbg{
+  background-color: white;
+  opacity: .8;
+  /* background-image:  */
+height: 700px;
+width:500px;
+}
+input{
+    border-radius: 10%;
+    border: 2px solid black;
+}

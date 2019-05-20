@@ -5,12 +5,20 @@
 }
 .lielem a{
     color: white !important;
-    margin: 2px;
+    /* margin: 2px; */
 }
-.lielem :hover{
+ul .lielem :hover{
     color: white;
-background-color: #804048;
-z-index: 1;
-border: 1px solid black;
+background-color: #000001;
+/* z-index: 1; */
+/* border: 1px solid black; */
 }
 
+.navbar{
+    padding: 0px !important;
+}
+@media only screen and (max-width: 600px) {
+    .nav-link{
+        text-align: center !important;
+    }
+}

@@ -1,12 +1,19 @@
 form{
-    
 }
+    
+
 .lform{
-    background-color: hsl(83, 83%, 49%);
+    background-color: blue;
     /* padding:2% 33%; */
     /* margin: 12px;
      */
+     border:2px black;
+
+
      width: 400px;
      height: 400px;
      
+}
+body{
+	background-color: #191970;
 }

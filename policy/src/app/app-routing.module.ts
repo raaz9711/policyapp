@@ -10,6 +10,7 @@ import { CarinsuranceComponent } from 'src/carinsurance/carinsurance.component';
 import { MotorpageComponent } from 'src/motorpage/motorpage.component';
 import { LifepageComponent } from 'src/lifepage/lifepage.component';
 import { HealthpageComponent } from 'src/healthpage/healthpage.component';
+import {AboutComponent} from 'src/app/about/about.component';
 const routes: Routes = [
   // {path: '' , redirectTo  : 'SignupComponent', pathMatch : 'full' },
 {path: 'signup' , component: SignupComponent},
@@ -21,11 +22,13 @@ const routes: Routes = [
 {path : 'carinsurance', component: CarinsuranceComponent},
 {path : 'motorpage', component: MotorpageComponent},
 {path : 'lifeinsurance' , component: LifepageComponent},
-{path : 'healthinsurance', component: HealthpageComponent}
+{path : 'healthinsurance', component: HealthpageComponent},
+{path: 'about',component: AboutComponent}
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  // import { AboutComponent } from './about/about.component';
+exports: [RouterModule]
 })
 export class AppRoutingModule { }

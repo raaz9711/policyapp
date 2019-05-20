@@ -1,8 +1,14 @@
-.carousel-indicators li{
+.carousel-item{
+    height: 600px;
+}
+@media only screen and (max-width: 600px) {
+    .carousel-item{
+        height: 180px;
+    }
+.navbar-toggler-icon{
     background-color: black;
 }
-
-
-.imgcls{
-    height: 555px;
+.nav-link{
+    font-weight: 600;
+}
 }

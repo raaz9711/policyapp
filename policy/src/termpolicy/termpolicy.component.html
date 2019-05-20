@@ -1,17 +1,46 @@
-<p>
-  termpolicy works!
-</p>
+<app-nav></app-nav>
+<div class="shadow">
+<h4 class="text-center">
+  get term policy
+  </h4>
+  <div class="row">
+  <div class="form-group col-3">
+    <label for="exampleFormControlSelect1">Select Range</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>Max to min</option>
+      <option>Min to Max</option>
+    </select>
+  </div>
+  <div class="col-3">
+  </div>
+  <div class="col-3">
+  </div>
+  <div class="col-3">
+    <span>Select by amount</span>
+    <p></p>
+    <!-- <br> -->
+     <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
 
+</div>
+ 
 
-<table>
+<br>
+</div>
+<br>
+<div class="container">
+<table class="table table-striped m-1">
   <tr>
-    <td>id</td>
-    <td>policy number</td>
-    <td>policy name</td>
-    <td>Amount</td>
-    <td>Buy</td>
+    <td scope="col">S.no</td>
+    <td scope="col">policy number</td>
+    <td scope="col">policy name</td>
+    <td scope="col">Amount</td>
+    <td scope="col">Buy</td>
   </tr>
-  <tr *ngFor="let policy of policies">
+  <tr scope="row" *ngFor="let policy of policies">
     <td>{{ policy.id }}</td>
     <td>{{ policy.number }}</td>
     <td>{{ policy.name }}</td>
@@ -20,3 +49,6 @@
     <td><button class="btn btn-primary">Buy</button></td>
     <td>
 </table>
+<br>
+</div>
+<app-footer></app-footer>
